@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DemoToursRegressionSuite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http://demo.guru99.com/test/newtours/"/>
+  <test name="FunctionalTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://demo.guru99.com/test/newtours/"/>
+    <classes>
+      <class name="TestNG.HomePage">
+        <methods>
+          <include name="verifyLogin"/>
+          <include name="softAssertVerifyTitle"/>
+          <include name="setup"/>
+          <include name="hardAssertVerifyTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestNG.HomePage -->
+    </classes>
+  </test> <!-- FunctionalTest(failed) -->
+</suite> <!-- Failed suite [DemoToursRegressionSuite] -->
